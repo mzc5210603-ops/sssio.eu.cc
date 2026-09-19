@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CIRCUIT · 电路实验室</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- 左侧 PCB 元件栏 -->
+<aside class="pcb-rail" aria-label="工具元件">
+  <div class="rail-logo">
+    <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="4" width="40" height="40" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="14" cy="14" r="3" fill="currentColor"/><circle cx="34" cy="14" r="3" fill="currentColor"/><circle cx="14" cy="34" r="3" fill="currentColor"/><circle cx="34" cy="34" r="3" fill="currentColor"/><path d="M14 14 L24 24 L34 14 M24 24 L24 34" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+    <span>CIRCUIT</span>
+  </div>
+  <div class="rail-slogan">SOLDER YOUR CALC</div>
+  <nav class="rail-list" id="railList">
+    <a href="#/" data-r="home" class="u on"><em>U0</em><b>INDEX</b><i>元件索引</i></a>
+    <a href="#/c1" data-r="c1" class="u"><em>U1</em><b>OHM</b><i>欧姆定律</i></a>
+    <a href="#/c2" data-r="c2" class="u"><em>U2</em><b>POWER</b><i>电功率</i></a>
+    <a href="#/c3" data-r="c3" class="u"><em>U3</em><b>R-SERIES</b><i>电阻串并</i></a>
+    <a href="#/c4" data-r="c4" class="u"><em>U4</em><b>DIV-V</b><i>分压电路</i></a>
+    <a href="#/c5" data-r="c5" class="u"><em>U5</em><b>DIV-I</b><i>分流电路</i></a>
+    <a href="#/c6" data-r="c6" class="u"><em>U6</em><b>RC-TAU</b><i>RC 时间常数</i></a>
+    <a href="#/c7" data-r="c7" class="u"><em>U7</em><b>LC-RES</b><i>谐振频率</i></a>
+    <a href="#/c8" data-r="c8" class="u"><em>U8</em><b>Z-AC</b><i>交流阻抗</i></a>
+  </nav>
+  <div class="rail-foot">V1.0 · MMXXVI</div>
+</aside>
+
+<!-- 右侧焊接工作区 -->
+<main class="workbench" id="workbench">
+  <header class="wb-head">
+    <div class="wb-crumbs" id="wbCrumbs">PCB / U0 INDEX</div>
+    <button class="wb-menu" id="wbMenu" aria-label="切换元件栏">&#9776;</button>
+  </header>
+  <section class="wb-canvas" id="app"></section>
+  <footer class="wb-foot">
+    <span class="dot"></span> SOLDERING IRON STANDBY · 全部计算本地完成 · 不上传任何数据
+  </footer>
+</main>
+
+<script src="js/elec.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
